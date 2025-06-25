@@ -3,7 +3,7 @@
     <div class="container-fluid py-1 px-3">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb bg-transparent mb-0 pb-0 pt-1 px-0 me-sm-6 me-5">
-            <li class="breadcrumb-item text-sm"><a class="opacity-5 text-dark" href="javascript:;">Pages</a></li>
+            <li class="breadcrumb-item text-sm"><a class="opacity-5 text-dark" href="javascript:;">{{ __('Pages') }}</a></li>
             <li class="breadcrumb-item text-sm text-dark active text-capitalize" aria-current="page">{{ str_replace('-', ' ', Request::path()) }}</li>
             </ol>
             <h6 class="font-weight-bolder mb-0 text-capitalize">{{ str_replace('-', ' ', Request::path()) }}</h6>
@@ -49,11 +49,11 @@
                         </div>
                         <div class="d-flex flex-column justify-content-center">
                         <h6 class="text-sm font-weight-normal mb-1">
-                            <span class="font-weight-bold">New message</span> from Laur
+                            <span class="font-weight-bold">{{ __('New message') }}</span> {{ __('from Laur') }}
                         </h6>
                         <p class="text-xs text-secondary mb-0">
                             <i class="fa fa-clock me-1"></i>
-                            13 minutes ago
+                            {{ __('13 minutes ago') }}
                         </p>
                         </div>
                     </div>
@@ -67,11 +67,11 @@
                         </div>
                         <div class="d-flex flex-column justify-content-center">
                         <h6 class="text-sm font-weight-normal mb-1">
-                            <span class="font-weight-bold">New album</span> by Travis Scott
+                            <span class="font-weight-bold">{{ __('New album') }}</span> {{ __('by Travis Scott') }}
                         </h6>
                         <p class="text-xs text-secondary mb-0">
                             <i class="fa fa-clock me-1"></i>
-                            1 day
+                            {{ __('1 day') }}
                         </p>
                         </div>
                     </div>
@@ -82,7 +82,7 @@
                     <div class="d-flex py-1">
                         <div class="avatar avatar-sm bg-gradient-secondary  me-3  my-auto">
                         <svg width="12px" height="12px" viewBox="0 0 43 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <title>credit-card</title>
+                            <title>{{ __('credit-card') }}</title>
                             <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                             <g transform="translate(-2169.000000, -745.000000)" fill="#FFFFFF" fill-rule="nonzero">
                                 <g transform="translate(1716.000000, 291.000000)">
@@ -97,11 +97,11 @@
                         </div>
                         <div class="d-flex flex-column justify-content-center">
                         <h6 class="text-sm font-weight-normal mb-1">
-                            Payment successfully completed
+                            {{ __('Payment successfully completed') }}
                         </h6>
                         <p class="text-xs text-secondary mb-0">
                             <i class="fa fa-clock me-1"></i>
-                            2 days
+                            {{ __('2 days') }}
                         </p>
                         </div>
                     </div>

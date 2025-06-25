@@ -9,7 +9,7 @@
           <div class="row">
             <div class="col-8">
               <div class="numbers">
-                <p class="text-sm mb-0 text-capitalize font-weight-bold">Total Pengguna</p>
+                <p class="text-sm mb-0 text-capitalize font-weight-bold">{{ __('Total Pengguna') }}</p>
                 <h5 class="font-weight-bolder mb-0">
                   {{ $jumlahUser }}
                 </h5>
@@ -30,7 +30,7 @@
           <div class="row">
             <div class="col-8">
               <div class="numbers">
-                <p class="text-sm mb-0 text-capitalize font-weight-bold">Total Admin</p>
+                <p class="text-sm mb-0 text-capitalize font-weight-bold">{{ __('Total Admin') }}</p>
                 <h5 class="font-weight-bolder mb-0">
                   {{ $jumlahAdmin }}
                 </h5>
@@ -51,9 +51,9 @@
           <div class="row">
             <div class="col-8">
                 <div class="numbers">
-                    <p class="text-sm mb-0 text-capitalize font-weight-bold">Status Sensor 1</p>
+                    <p class="text-sm mb-0 text-capitalize font-weight-bold">{{ __('Status Sensor 1') }}</p>
                     <span class="badge bg-danger text-white mb-0 mt-1">
-                        <i class="fas fa-plug-circle-xmark me-2"></i>Offline
+                        <i class="fas fa-plug-circle-xmark me-2"></i>{{ __('Offline') }}
                     </span>
                 </div>
             </div>
@@ -72,9 +72,9 @@
           <div class="row">
             <div class="col-8">
                 <div class="numbers">
-                    <p class="text-sm mb-0 text-capitalize font-weight-bold">Status Sensor 2</p>
+                    <p class="text-sm mb-0 text-capitalize font-weight-bold">{{ __('Status Sensor 2') }}</p>
                     <span class="badge bg-success text-white mb-0 mt-1">
-                        <i class="fa-solid fa-earth-americas me-2"></i>Online
+                        <i class="fa-solid fa-earth-americas me-2"></i>{{ __('Online') }}
                     </span>
                 </div>
             </div>
@@ -92,17 +92,17 @@
     <div class="col-lg-8">
       <div class="card h-100 z-index-2">
         <div class="card-header pb-0 d-flex justify-content-between align-items-center">
-          <h6 class="text-bolder">Grafik Kadar Air</h6>
+          <h6 class="text-bolder">{{ __('Grafik Kadar Air') }}</h6>
             <div class="dropdown">
                 <button class="btn btn-sm btn-outline-primary dropdown-toggle" type="button" id="dropdownFilter" data-bs-toggle="dropdown" aria-expanded="false">
-                    <i class="fas fa-filter text-dark text-sm me-2"></i> Filter
+                    <i class="fas fa-filter text-dark text-sm me-2"></i> {{ __('Filter') }}
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="dropdownFilter">
-                    <li><a class="dropdown-item" href="#" onclick="event.preventDefault(); filterKadar('All')">Semua Data</a></li>
+                    <li><a class="dropdown-item" href="#" onclick="event.preventDefault(); filterKadar('All')">{{ __('Semua Data') }}</a></li>
                     <li><hr class="dropdown-divider opacity-2"></li>
-                    <li><a class="dropdown-item" href="#" onclick="event.preventDefault(); filterKadar('15')">15 Menit</a></li>
-                    <li><a class="dropdown-item" href="#" onclick="event.preventDefault(); filterKadar('30')">30 Menit</a></li>
-                    <li><a class="dropdown-item" href="#" onclick="event.preventDefault(); filterKadar('60')">1 Jam</a></li>
+                    <li><a class="dropdown-item" href="#" onclick="event.preventDefault(); filterKadar('15')">{{ __('15 Menit') }}</a></li>
+                    <li><a class="dropdown-item" href="#" onclick="event.preventDefault(); filterKadar('30')">{{ __('30 Menit') }}</a></li>
+                    <li><a class="dropdown-item" href="#" onclick="event.preventDefault(); filterKadar('60')">{{ __('1 Jam') }}</a></li>
                 </ul>
             </div>
         </div>
@@ -116,7 +116,7 @@
     <div class="col-lg-4 mb-0">
         <div class="card h-100 shadow-sm border-0">
             <div class="card-header pb-0 text-danger d-flex justify-content-between align-items-center">
-                <h6 class="mb-0 text-bolder">Kondisi</h6>
+                <h6 class="mb-0 text-bolder">{{ __('Kondisi') }}</h6>
             </div>
             <div class="card-body">
                 <canvas id="chartpie-kadar" class="chart-canvas" height="300"></canvas>
@@ -128,17 +128,17 @@
     <div class="col-lg-8">
       <div class="card z-index-2 h-100">
         <div class="card-header pb-0 d-flex justify-content-between align-items-center">
-          <h6 class="text-bolder">Grafik Kecepatan Air</h6>
+          <h6 class="text-bolder">{{ __('Grafik Kecepatan Air') }}</h6>
             <div class="dropdown">
                 <button class="btn btn-sm btn-outline-primary dropdown-toggle" type="button" id="dropdownFilter" data-bs-toggle="dropdown" aria-expanded="false">
-                    <i class="fas fa-filter text-dark text-sm me-2"></i> Filter
+                    <i class="fas fa-filter text-dark text-sm me-2"></i> {{ __('Filter') }}
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="dropdownFilter">
-                    <li><a class="dropdown-item" href="#" onclick="event.preventDefault(); filterKecepatan('All')">Semua Data</a></li>
+                    <li><a class="dropdown-item" href="#" onclick="event.preventDefault(); filterKecepatan('All')">{{ __('Semua Data') }}</a></li>
                     <li><hr class="dropdown-divider opacity-2"></li>
-                    <li><a class="dropdown-item" href="#" onclick="event.preventDefault(); filterKecepatan('15')">15 Menit</a></li>
-                    <li><a class="dropdown-item" href="#" onclick="event.preventDefault(); filterKecepatan('30')">30 Menit</a></li>
-                    <li><a class="dropdown-item" href="#" onclick="event.preventDefault(); filterKecepatan('60')">1 Jam</a></li>
+                    <li><a class="dropdown-item" href="#" onclick="event.preventDefault(); filterKecepatan('15')">{{ __('15 Menit') }}</a></li>
+                    <li><a class="dropdown-item" href="#" onclick="event.preventDefault(); filterKecepatan('30')">{{ __('30 Menit') }}</a></li>
+                    <li><a class="dropdown-item" href="#" onclick="event.preventDefault(); filterKecepatan('60')">{{ __('1 Jam') }}</a></li>
                 </ul>
             </div>
         </div>
@@ -152,7 +152,7 @@
     <div class="col-lg-4 mb-0">
         <div class="card h-100 shadow-sm border-0">
             <div class="card-header pb-0 text-danger d-flex justify-content-between align-items-center">
-                <h6 class="mb-0 text-bolder">Kondisi</h6>
+                <h6 class="mb-0 text-bolder">{{ __('Kondisi') }}</h6>
             </div>
             <div class="card-body">
                 <canvas id="chartpie-kecepatan" class="chart-canvas" height="300"></canvas>

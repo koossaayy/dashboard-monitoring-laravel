@@ -8,18 +8,18 @@
         <div class="col-12">
           <div class="card mb-4">
             <div class="card-header pb-0 d-flex justify-content-between align-items-center">
-              <h6>Tabel Data Kecepatan Air</h6>
-              <a class="btn btn-sm btn-primary py-2 px-3" data-bs-toggle="modal" data-bs-target="#modalDownload" href=""><i class="fas fa-download me-2 text-sm"></i>Unduh .csv</a>
+              <h6>{{ __('Tabel Data Kecepatan Air') }}</h6>
+              <a class="btn btn-sm btn-primary py-2 px-3" data-bs-toggle="modal" data-bs-target="#modalDownload" href=""><i class="fas fa-download me-2 text-sm"></i>{{ __('Unduh .csv') }}</a>
             </div>
             <div class="card-body px-0">
               <div class="table-responsive">
                 <table class="table align-items-center mb-0 data-tables mt-2">
                   <thead>
                     <tr>
-                      <th class="text-center w-5 text-uppercase text-secondary text-xxs font-weight-bolder">No</th>
-                      <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Waktu Pendeteksian</th>
-                      <th class="text-center align-middle text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Nilai</th>
-                      <th class="text-center align-middle text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Keterangan</th>
+                      <th class="text-center w-5 text-uppercase text-secondary text-xxs font-weight-bolder">{{ __('No') }}</th>
+                      <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">{{ __('Waktu Pendeteksian') }}</th>
+                      <th class="text-center align-middle text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">{{ __('Nilai') }}</th>
+                      <th class="text-center align-middle text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">{{ __('Keterangan') }}</th>
                     </tr>
                   </thead>
                   <tbody>
