@@ -9,9 +9,9 @@
                 <div class="card-header pb-0">
                     <div class="d-flex flex-row justify-content-between" style="margin-bottom: 10px;">
                         <div>
-                            <h5 class="mb-0">All Users</h5>
+                            <h5 class="mb-0">{{ __('All Users') }}</h5>
                         </div>
-                        <a href="#" class="btn bg-gradient-primary btn-sm mb-0" data-bs-toggle="modal" data-bs-target="#createUserModal">+&nbsp; New User</a>
+                        <a href="#" class="btn bg-gradient-primary btn-sm mb-0" data-bs-toggle="modal" data-bs-target="#createUserModal">{{ __('+&nbsp; New User') }}</a>
                     </div>
                 </div>
                 <div class="card-body px-0 pt-0 pb-2">
@@ -20,22 +20,22 @@
                             <thead>
                                 <tr>
                                     <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
-                                        ID
+                                        {{ __('ID') }}
                                     </th>
                                     <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
-                                        Nama Lengkap
+                                        {{ __('Nama Lengkap') }}
                                     </th>
                                     <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
-                                        Email
+                                        {{ __('Email') }}
                                     </th>
                                     <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
-                                        role
+                                        {{ __('role') }}
                                     </th>
                                     <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
-                                        Creation Date
+                                        {{ __('Creation Date') }}
                                     </th>
                                     <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
-                                        Action
+                                        {{ __('Action') }}
                                     </th>
                                 </tr>
                             </thead>
@@ -80,44 +80,44 @@
                                         @csrf
                                         <div class="modal-content">
                                             <div class="modal-header">
-                                            <h5 class="modal-title" id="createUserModalLabel">Add New User</h5>
+                                            <h5 class="modal-title" id="createUserModalLabel">{{ __('Add New User') }}</h5>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                             </div>
 
                                             <div class="modal-body">
                                             <div class="mb-3">
-                                                <label for="name" class="form-label">Name</label>
+                                                <label for="name" class="form-label">{{ __('Name') }}</label>
                                                 <input type="text" name="name" class="form-control" required>
                                             </div>
 
                                             <div class="mb-3">
-                                                <label for="email" class="form-label">Email</label>
+                                                <label for="email" class="form-label">{{ __('Email') }}</label>
                                                 <input type="email" name="email" class="form-control" required>
                                             </div>
 
                                             <div class="mb-3">
-                                                <label for="role" class="form-label">Role</label>
+                                                <label for="role" class="form-label">{{ __('Role') }}</label>
                                                 <select name="role" class="form-select" required>
-                                                <option value="">-- Select Role --</option>
-                                                <option value="admin">Admin</option>
-                                                <option value="user">User</option>
+                                                <option value="">{{ __('-- Select Role --') }}</option>
+                                                <option value="admin">{{ __('Admin') }}</option>
+                                                <option value="user">{{ __('User') }}</option>
                                                 </select>
                                             </div>
 
                                             <div class="mb-3">
-                                                <label for="password" class="form-label">Password</label>
+                                                <label for="password" class="form-label">{{ __('Password') }}</label>
                                                 <input type="password" name="password" class="form-control" required minlength="6">
                                             </div>
 
                                             <div class="mb-3">
-                                                <label for="password_confirmation" class="form-label">Confirm Password</label>
+                                                <label for="password_confirmation" class="form-label">{{ __('Confirm Password') }}</label>
                                                 <input type="password" name="password_confirmation" class="form-control" required minlength="6">
                                             </div>
                                             </div>
 
                                             <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-                                            <button type="submit" class="btn btn-primary">Create User</button>
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">{{ __('Cancel') }}</button>
+                                            <button type="submit" class="btn btn-primary">{{ __('Create User') }}</button>
                                             </div>
                                         </div>
                                         </form>
@@ -136,18 +136,18 @@
 
                                             <div class="modal-body">
                                             <div class="mb-3">
-                                                <label for="new_password" class="form-label">New Password</label>
+                                                <label for="new_password" class="form-label">{{ __('New Password') }}</label>
                                                 <input type="password" name="password" class="form-control" required minlength="6">
                                             </div>
                                             <div class="mb-3">
-                                                <label for="password_confirmation" class="form-label">Confirm Password</label>
+                                                <label for="password_confirmation" class="form-label">{{ __('Confirm Password') }}</label>
                                                 <input type="password" name="password_confirmation" class="form-control" required minlength="6">
                                             </div>
                                             </div>
 
                                             <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-                                            <button type="submit" class="btn btn-primary">Update Password</button>
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">{{ __('Cancel') }}</button>
+                                            <button type="submit" class="btn btn-primary">{{ __('Update Password') }}</button>
                                             </div>
                                         </div>
                                         </form>
